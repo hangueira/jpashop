@@ -2,11 +2,15 @@ package com.hks713.jpashop.domain;
 
 import jakarta.persistence.*;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import static lombok.AccessLevel.*;
 
 @Entity
 @Getter
 @Setter
+@NoArgsConstructor(access = PROTECTED)
 public class OrderItem {
 
     @Id
